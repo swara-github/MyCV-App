@@ -1,0 +1,26 @@
+<template name="awards">
+  <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+    <div class="w-100">
+      <h2 class="mb-5">Awards &amp; Certifications</h2>
+
+      <!--Awards and certifications section-->
+
+      <!--{{awardsData awardname}}</p>-->
+      
+
+        <ul class="fa-ul mb-0">
+            {{#each award in awardlist}}
+          <li>
+              <i class="fa-li fa fa-trophy text-warning"></i>
+              
+            {{award.name}} - {{award.place}} ({{award.year}})
+          </li>
+          {{/each}}
+
+        </ul>
+    </div>
+
+  </section>
+
+
+</template>
